@@ -1,0 +1,53 @@
+# Local environment and credentials (keep configuration templates).
+.env
+.env.*
+!.env.example
+!.env.*.example
+auth.json
+/.aws/
+
+# Local editor and agent settings.
+/.agents/
+/.codex/
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Dependencies; composer.lock and package-lock.json stay in Git.
+/app/vendor/
+/app/node_modules/
+
+# Frontend bundles and generated Laravel routes.
+/app/public/build/
+/app/public/hot
+/app/public/storage
+/app/public/fonts-manifest.dev.json
+/app/bootstrap/ssr/
+/app/resources/js/actions/
+/app/resources/js/routes/
+/app/resources/js/wayfinder/
+
+# Laravel runtime data, logs, caches and local SQLite databases.
+/app/storage/**
+!/app/storage/**/
+!/app/storage/**/.gitignore
+/app/bootstrap/cache/*
+!/app/bootstrap/cache/.gitignore
+/app/database/*.sqlite
+/app/database/*.sqlite-*
+/app/database/*.db
+/app/database/*.db-*
+/app/.phpunit.cache/
+/app/.phpunit.result.cache
+*.tsbuildinfo
+*.log
+
+# User documents and compilation output; keep the empty directory structure.
+/workspace/*
+!/workspace/.gitignore
+/output/*
+!/output/.gitignore
